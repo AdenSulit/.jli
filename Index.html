@@ -10,7 +10,25 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
-      <input type="text" id="password" name="password" placeholder="Password">      
-	<script src="index.js"></script>
+        <input type="text" id="password" name="password" placeholder="Password">
+	  <button onclick="openGame()">Enter</button>
+	<script>
+		var pswrd = document.getElementById("password");
+		function openGame(){
+			var win = window.open()
+			var urla = "https://holy-unblocker.github.io/theatre/public/html5/webretro/?core=mgba&rom=https%3A%2F%2Fholy-unblocker.github.io%2Ftheatre%2Fpublic%2Fgba%2Fpokemonfirered.gba"
+			var urlb = "https://cdn.vox-cdn.com/thumbor/SvLIA3pSwB-yiZ-_hsLVjH2a-Dk=/53x246:1166x1081/1200x800/filters:focal(53x246:1166x1081)/cdn.vox-cdn.com/uploads/chorus_image/image/44306254/4756098992_5fbae5e9a3_o.0.0.jpg"
+			var iframe = win.document.createElement('iframe')
+			iframe.style.width = "100%";
+			iframe.style.height = "100%";
+			iframe.style.border = "none";
+			if (pswrd.value = "adensussypreggers") {
+				iframe.src = urla
+			} else{
+				iframe.src = urlb
+			}
+			win.document.body.appendChild(iframe)
+		}
+	</script>
   </body>
 </html>
